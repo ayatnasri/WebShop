@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "name": "A blue dress",
+      "price": "999 SEK",
+      "id": "ABC123",
+      "description": "This is a description of product 1",
+      "image": "https://as1.ftcdn.net/v2/jpg/01/13/38/36/1000_F_113383686_yAA6oBW3ISBssarg6HOtlsKuj3zOau2O.jpg"
+    },
+    {
+      "name": "A pink dress",
+      "price": "499 SEK",
+      "id": "DEF456",
+      "description": "This is a description of product 2",
+      "image": "https://media.istockphoto.com/illustrations/red-dress-on-mannequin-illustration-on-white-background-illustration-id1312526802?k=20&m=1312526802&s=612x612&w=0&h=2rOyKQzbk2Pv2uZYXoul9W2hAe-lx7nXWkG6YCwLhlA="
+    },
+    {
+      "name": "Product 3",
+      "price": "199 SEK",
+      "id": "GHI789",
+      "description": "This is a description of product 3",
+      "image": " https://media.istockphoto.com/illustrations/illustration-red-jacket-on-a-mannequin-fashion-silhouette-logo-symbol-illustration-id1387627199?k=20&m=1387627199&s=612x612&w=0&h=4uNzJyg6i2IFN_pBs4u6DJHKzd803ci8z6DkpTFuwDU="
+    },
+    {
+      "name": "Product 4",
+      "price": "399 SEK",
+      "id": "JKL012",
+      "description": "This is a description of product 4",
+      "image": "https://media.istockphoto.com/illustrations/silhouette-of-a-blue-jacket-on-a-mannequin-illustration-on-white-for-illustration-id1316042469?k=20&m=1316042469&s=612x612&w=0&h=KG857WRgau2xgGyiNbAaXoWMK0Z2qqFlRlwigfiXTWo="
+    },
+    {
+      "name": "Product 5",
+      "price": "299 SEK",
+      "id": "MNO345",
+      "description": "This is a description of product 5",
+      "image": "https://media.istockphoto.com/illustrations/flower-dress-on-a-mannequin-beige-dress-in-a-small-red-flower-linear-illustration-id1312492498?k=20&m=1312492498&s=612x612&w=0&h=gGemvz5hdDq0_d9HDoM_Gk0LKJ2b2iKyFTECKIrFTmM="
+    },
+    {
+      "name": "Product 6",
+      "price": "599 SEK",
+      "id": "PQR678",
+      "description": "This is a description of product 6",
+      "image": "https://media.istockphoto.com/illustrations/black-dress-on-a-mannequin-linear-graphics-illustration-on-white-illustration-id1316045210?k=20&m=1316045210&s=612x612&w=0&h=FOvLx2nl4SpIAiJGNc9bXVHjO0RSlAh9Nsj50BPHYQ0="
+    },
+    {
+      "name": "Product 7",
+      "price": "1499 SEK",
+      "id": "STU901",
+      "description": "This is a description of product 7",
+      "image": "https://media.istockphoto.com/illustrations/green-dress-with-white-polka-dots-on-a-mannequin-linear-graphics-on-illustration-id1312492436?k=20&m=1312492436&s=612x612&w=0&h=4ML3bIb0GHMUBERkcTez_SRMMEYicEF3YF48NBlAY04="
+    },
+    {
+      "name": "Product 8",
+      "price": "249 SEK",
+      "id": "VWX234",
+      "description": "This is a description of product 8",
+      "image": "https://media.istockphoto.com/illustrations/fashion-logo-symbol-textile-lush-evening-dress-on-a-mannequin-illustration-id1392293307?k=20&m=1392293307&s=612x612&w=0&h=5oJHROxiV2xMgVrjuvpVXWBL0g1-Swf5E14NV2TzCzs="
+    },
+    {
+      "name": "Product 9",
+      "price": "1099 SEK",
+      "id": "YZA567",
+      "description": "This is a description of product 9",
+      "image": "https://media.istockphoto.com/illustrations/turquoise-dress-on-a-mannequin-linear-graphics-illustration-on-white-illustration-id1312492266?k=20&m=1312492266&s=612x612&w=0&h=IE9Q1p73OJfhFJHzt3DVogpCdW0Di9V_7wCsarL5Hjc="
+    },
+    {
+      "name": "Product 10",
+      "price": "699 SEK",
+      "id": "BCD890",
+      "description": "This is a description of product 10",
+      "image": "https://media.istockphoto.com/illustrations/crimson-suit-on-a-mannequin-jacket-with-bow-and-skirt-linear-graphics-illustration-id1312492326?k=20&m=1312492326&s=612x612&w=0&h=7FkngLhy6XAgG-T-K4yHG75o9xXMfvVK68yhgxZXGlk="
+    }
+  ]
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import products from "./products.json";
 
 function App() {
+  const [state, setState] = useState(products.products);
+  console.log(state);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <table>
+        <thead></thead>
+        <tbody>
+          {state.map((e, i) => {
+            return [
+              <tr key={i}>
+                <td>
+                  <img className="img" src={e.image} alt="" />{" "}
+                </td>
+                <td>{e.id}</td>
+                <td>{e.name}</td>
+                <td>{e.price}</td>
+                <td>{e.description}</td>
+              </tr>,
+            ];
+          })}
+        </tbody>
+      </table>
     </div>
   );
 }
