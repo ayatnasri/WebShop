@@ -1,4 +1,4 @@
-.App {
+.Navigation {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -65,4 +65,23 @@
   flex-direction: column;
   gap: 20px;
   align-items: flex-end;
+}
+
+/* -----*/
+.moreInfo {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+.moreInfo span {
+  color: orangered;
+  font-size: 25px;
+  font-weight: 700;
+}
+.moreInfo img {
+  width: 200px;
 }

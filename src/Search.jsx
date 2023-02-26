@@ -1,16 +1,16 @@
 import { useState } from "react";
 import SearchResult from "./Result";
-import products from "./products.json";
 
-function SearchBar() {
+function SearchBar(props) {
   const [search, setSearch] = useState("");
   const [visible, setVisible] = useState(false);
-  const aProduct = products.products;
+  const allProducts = props.products;
 
   const searchOnChange = (e) => {
     let searchToLowerCase = e.target.value.toLowerCase();
     setSearch(searchToLowerCase);
     console.log(e.target.value);
+
     if (searchToLowerCase.length > 3) {
       setVisible(true);
     } else if (searchToLowerCase === "") {
@@ -18,7 +18,7 @@ function SearchBar() {
     }
   };
 
-  const filterProducter = aProduct.filter((p) => {
+  const filterProducter = allProducts.filter((p) => {
     if (search === "") {
       return p;
     } else {
@@ -52,10 +52,11 @@ function SearchBar() {
           <button onClick={onClickHandel}>Search</button>
         </div>
       </form>
+
       {visible && (
         <div className="producter-container">
           {filterProducter.map((p) => (
-            <SearchResult key={p.id} item products={aProduct} product={p} />
+            <SearchResult key={p.id} item products={allProducts} product={p} />
           ))}
         </div>
       )}
@@ -64,11 +65,3 @@ function SearchBar() {
 }
 
 export default SearchBar;
-/*  //   if (search.length > 0) {
-  //     console.log(search);
-  //     product.filter((p) => {
-  //       return p.name.match(search);
-  //       //|| product.description.match(search);
-  //     });
-  //   }
-  */
