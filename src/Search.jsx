@@ -10,7 +10,6 @@ function SearchBar(props) {
     let searchToLowerCase = e.target.value.toLowerCase();
     setSearch(searchToLowerCase);
     console.log(e.target.value);
-
     if (searchToLowerCase.length > 3) {
       setVisible(true);
     } else if (searchToLowerCase === "") {

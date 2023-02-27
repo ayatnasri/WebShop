@@ -6,17 +6,19 @@ function SearchResult(props) {
 
   return (
     <div className="product">
-      <div className="product-img">
-        <img className="img" src={product.image} alt={product.name} />
-        <div>
+      <img className="img" src={product.image} alt={product.name} />
+      <div className="product-list">
+        <div className="product-name">
           <h3>{product.name}</h3>
-          <Link to={`/producter/${product.id}`}>More information</Link>
+          <Link className="more" to={`/producter/${product.id}`}>
+            More information
+          </Link>
         </div>
-      </div>
 
-      <div className="product-price">
-        <span>{product.price}</span>
-        <button>Add to card</button>
+        <div className="product-price">
+          <span>{product.price}</span>
+          <button>Add to card</button>
+        </div>
       </div>
     </div>
   );

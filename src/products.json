@@ -1,73 +1,73 @@
 {
   "products": [
     {
-      "name": "A blue dress",
+      "name": "Long blue dress",
       "price": "999 SEK",
       "id": "ABC123",
-      "description": "This is a description of product 1",
+      "description": "Blue Puff Sleeves A-Line Maxi Dress | Princess Style Luxury Floor Length Satin Dresses | Gorgeous Evening Party Prom Gown.",
       "image": "https://as1.ftcdn.net/v2/jpg/01/13/38/36/1000_F_113383686_yAA6oBW3ISBssarg6HOtlsKuj3zOau2O.jpg"
     },
     {
-      "name": "A pink dress",
+      "name": "Pink dress",
       "price": "499 SEK",
       "id": "DEF456",
-      "description": "This is a description of product 2",
+      "description": "Appliques Evening dress prom dresses evening gowns vestidos de fiesta robe de soirée de mariage Party Dresses Prom Formal Bridesmaid Dress.",
       "image": "https://media.istockphoto.com/illustrations/red-dress-on-mannequin-illustration-on-white-background-illustration-id1312526802?k=20&m=1312526802&s=612x612&w=0&h=2rOyKQzbk2Pv2uZYXoul9W2hAe-lx7nXWkG6YCwLhlA="
     },
     {
-      "name": "Product 3",
+      "name": "Pink formal suit",
       "price": "199 SEK",
       "id": "GHI789",
-      "description": "This is a description of product 3",
+      "description": "Women Custom Made Pink Double Breasted 2Pc Business Formal Suit Office Wear Bridesmaid Wedding Cocktail Prom Party Coat Pant Gift For Her.",
       "image": " https://media.istockphoto.com/illustrations/illustration-red-jacket-on-a-mannequin-fashion-silhouette-logo-symbol-illustration-id1387627199?k=20&m=1387627199&s=612x612&w=0&h=4uNzJyg6i2IFN_pBs4u6DJHKzd803ci8z6DkpTFuwDU="
     },
     {
-      "name": "Product 4",
+      "name": "Blue formal suit",
       "price": "399 SEK",
       "id": "JKL012",
-      "description": "This is a description of product 4",
+      "description": "Women's 2 Piece Pant Suit, Business Attire Royal blue womens suit set walk through pant suit prom pantsuit. Valentine's gift for her.",
       "image": "https://media.istockphoto.com/illustrations/silhouette-of-a-blue-jacket-on-a-mannequin-illustration-on-white-for-illustration-id1316042469?k=20&m=1316042469&s=612x612&w=0&h=KG857WRgau2xgGyiNbAaXoWMK0Z2qqFlRlwigfiXTWo="
     },
     {
-      "name": "Product 5",
+      "name": "Spring orange dress",
       "price": "299 SEK",
       "id": "MNO345",
-      "description": "This is a description of product 5",
+      "description": "RETRO ORANGE DRESS - Vintage Style Dress - Orange Printed Dress - Orange Midi Dress - Elasticated Dress - Women Retro Dress.",
       "image": "https://media.istockphoto.com/illustrations/flower-dress-on-a-mannequin-beige-dress-in-a-small-red-flower-linear-illustration-id1312492498?k=20&m=1312492498&s=612x612&w=0&h=gGemvz5hdDq0_d9HDoM_Gk0LKJ2b2iKyFTECKIrFTmM="
     },
     {
-      "name": "Product 6",
+      "name": "Dark dress",
       "price": "599 SEK",
       "id": "PQR678",
-      "description": "This is a description of product 6",
+      "description": "Dark Gothic Mini Dress, Korean Fashion, Mesh Patchwork Lace Up High Waist Dress, Alt Dresses, Emo Dress, Prom Dress, Y2k Dress, Black Dress.",
       "image": "https://media.istockphoto.com/illustrations/black-dress-on-a-mannequin-linear-graphics-illustration-on-white-illustration-id1316045210?k=20&m=1316045210&s=612x612&w=0&h=FOvLx2nl4SpIAiJGNc9bXVHjO0RSlAh9Nsj50BPHYQ0="
     },
     {
-      "name": "Product 7",
+      "name": "Green dress",
       "price": "1499 SEK",
       "id": "STU901",
-      "description": "This is a description of product 7",
+      "description": "Green Tulle Dress, French Fairy Dress, Evening Prom Dress, Fairy Dress, Wedding Dress, Prom Dress Fairy, Princess Dress, Dress For Women.",
       "image": "https://media.istockphoto.com/illustrations/green-dress-with-white-polka-dots-on-a-mannequin-linear-graphics-on-illustration-id1312492436?k=20&m=1312492436&s=612x612&w=0&h=4ML3bIb0GHMUBERkcTez_SRMMEYicEF3YF48NBlAY04="
     },
     {
-      "name": "Product 8",
+      "name": "Purple dress",
       "price": "249 SEK",
       "id": "VWX234",
-      "description": "This is a description of product 8",
+      "description": "Embroidered Mesh & Scuba Midi Dress - Purple,Evening dress, Special party dress, Occasion dress, Wedding events dress, Prom dress.",
       "image": "https://media.istockphoto.com/illustrations/fashion-logo-symbol-textile-lush-evening-dress-on-a-mannequin-illustration-id1392293307?k=20&m=1392293307&s=612x612&w=0&h=5oJHROxiV2xMgVrjuvpVXWBL0g1-Swf5E14NV2TzCzs="
     },
     {
-      "name": "Product 9",
+      "name": "Light green drees",
       "price": "1099 SEK",
       "id": "YZA567",
-      "description": "This is a description of product 9",
+      "description": "Forest Green Floral Fairy Dress,Green Bridesmaid Dress.",
       "image": "https://media.istockphoto.com/illustrations/turquoise-dress-on-a-mannequin-linear-graphics-illustration-on-white-illustration-id1312492266?k=20&m=1312492266&s=612x612&w=0&h=IE9Q1p73OJfhFJHzt3DVogpCdW0Di9V_7wCsarL5Hjc="
     },
     {
-      "name": "Product 10",
+      "name": "Pink set with skirt",
       "price": "699 SEK",
       "id": "BCD890",
-      "description": "This is a description of product 10",
+      "description": "Zara - Pink Two Piece Cape Blazer & Skirt Set.",
       "image": "https://media.istockphoto.com/illustrations/crimson-suit-on-a-mannequin-jacket-with-bow-and-skirt-linear-graphics-illustration-id1312492326?k=20&m=1312492326&s=612x612&w=0&h=7FkngLhy6XAgG-T-K4yHG75o9xXMfvVK68yhgxZXGlk="
     }
   ]

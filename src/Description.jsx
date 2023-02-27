@@ -12,20 +12,20 @@ function Description(props) {
   return (
     <div className="moreInfo">
       <h2>
-        <span>Name:</span> {productID.name}{" "}
+        <span>Name:</span> {productID.name}
       </h2>
       <img src={productID.image} alt={productID.name} />
       <ul>
         <li>
-          <span> Product id :</span> {productID.id}{" "}
+          <span> Product id :</span> {productID.id}
         </li>
         <li>
           <span>Price : </span>
-          {productID.price}{" "}
+          {productID.price}
         </li>
         <li>
           <p>
-            <span>Description : </span> {productID.description}{" "}
+            <span>Description : </span> {productID.description}
           </p>
         </li>
       </ul>
