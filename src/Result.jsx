@@ -46,7 +46,13 @@ function SearchResult(props) {
 
           <div className={styles.productPrice}>
             <span>{product.price}</span>
-            <button>Add to card</button>
+            <button
+              onClick={() => {
+                props.onClickAdd(product);
+              }}
+            >
+              Add to card
+            </button>
           </div>
         </div>
       </div>

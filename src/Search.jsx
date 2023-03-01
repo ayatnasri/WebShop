@@ -1,13 +1,12 @@
 import { useState } from "react";
-import SearchResult from "./Result";
-import ShoppingCard from "./ShoppingCard";
 import products from "./products.json";
 import styles from "./styles/search.module.css";
+import Binding from "./Binding";
 
-function SearchBar(props) {
-  const [search, setSearch] = useState(""); //Search state with empty inital value
-  const [showResult, setShowResult] = useState(false);
+function SearchBar() {
   const allProducts = products.products;
+  const [search, setSearch] = useState(""); //Search state with empty inital value
+  const [showResult, setShowResult] = useState(false); // if true will show the search result
 
   const searchOnChange = (e) => {
     let searchToLowerCase = e.target.value.toLowerCase();
@@ -33,6 +32,7 @@ function SearchBar(props) {
       setShowResult(false);
     }
   };
+
   return (
     <div className={styles.App}>
       <form className={styles.searchContainer}>
@@ -49,22 +49,7 @@ function SearchBar(props) {
       </form>
 
       {showResult && (
-        <div className={styles.resultContainer}>
-          <div className={styles.producterContainer}>
-            {filterProducter.map((p) => (
-              <SearchResult
-                key={p.id}
-                item
-                products={allProducts}
-                product={p}
-              />
-            ))}
-          </div>
-
-          <div className={styles.shoppingCardContainer}>
-            <ShoppingCard />
-          </div>
-        </div>
+        <Binding filterProducter={filterProducter} products={allProducts} />
       )}
     </div>
   );

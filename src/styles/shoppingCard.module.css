@@ -1,0 +1,19 @@
+.productContainer {
+  display: flex;
+  color: rgb(168, 11, 37);
+  background-color: white;
+}
+.productContainer img {
+  width: 70px;
+  height: 70px;
+}
+.productContainer h2 {
+  font-size: 15px;
+}
+.productName {
+  width: 200px;
+  padding-left: 10px;
+}
+.productContainer button {
+  width: 70px;
+}
