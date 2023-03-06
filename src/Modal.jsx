@@ -1,18 +1,13 @@
 import styles from "./styles/modal.module.css";
 
-function Modal(props) {
-  const children = props.children;
-  const showModal = props.toggle;
-  const onClose = props.onClose;
+function Modal({children, toggle, onClose}) {
 
   return (
-    showModal && (
+    toggle && (
       <div className={styles.popUpContainer}>
         <div className={styles.childrenContainer}>
           {children}
-          <button className={styles.backBtn} onClick={onClose}>
-            Back
-          </button>
+          <button className={styles.backBtn} onClick={onClose}> X </button>
         </div>
       </div>
     )

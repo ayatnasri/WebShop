@@ -1,0 +1,10 @@
+.resultContainer {
+    display: flex;
+}
+.producterContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    margin: 10px auto;
+}

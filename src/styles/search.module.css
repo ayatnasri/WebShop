@@ -1,15 +1,51 @@
 .App {
-  background-color: rgb(0, 40, 57);
+  background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=f04d2786c16b18e1ee49ca8128b65221');
   min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+.search {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: white;
+  justify-content: flex-start;
   width: 70%;
   margin: 0 auto;
 }
-
+.search h1, .search h2 { 
+  font-family: "Brush Script MT", cursive; 
+  font-style: normal;
+  font-variant: normal;
+  line-height: 23px;
+  font-size: 50px;
+}
+.search h1 {
+  font-size: 100px;
+  font-weight: 500;
+  color: rgb(220, 53, 69);
+  margin-bottom: 20px;
+}
+.search .logo{
+  background-image: url('https://t4.ftcdn.net/jpg/03/31/79/69/240_F_331796922_fRMvtQy0zEhmJYbS7N77dHT39p4Qxm1T.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  position: relative  ;
+}
+.search .logo h2 {
+  position: absolute;
+  width: 500px;
+  top: 100px;
+  left: -140px;
+  font-size: 70px;
+  color: rgb(88, 62, 65);
+}
 .searchContainer {
   display: flex;
   justify-content: center;
@@ -19,41 +55,47 @@
   gap: 20px;
   color: rgb(220, 53, 69);
 }
-
 .searchBar {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
-
 .searchBar input {
-  width: 400px;
+  width: 450px;
   height: 40px;
   padding: 3px 3px 3px 10px;
   border-radius: 20px;
   font-size: 15px;
+  border: 1px solid rgb(179, 131, 136);
+  outline: 0;
+  background-color: #f5f5f5;
 }
-
+.searchBar input:hover, .searchBar input:focus {
+  border: 2px solid  rgb(220, 53, 69);
+}
 .searchBar button {
   width: 100px;
   height: 50px;
   border-radius: 20px;
   border: none;
   background-color: rgb(220, 53, 69);
-  color: wheat;
+  color: white;
   font-size: 20px;
+  font-family:cursive;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 23px; 
 }
-.resultContainer {
-  display: flex;
+.noResult{
+  font-family:cursive;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 25px;
+  color: rgb(88, 62, 65);
 }
-.producterContainer {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  padding: 20px;
-  margin: 10px auto;
-}
-.shoppingCardContainer {
-  width: 30%;
+.noResult i{
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(220, 53, 69);
 }

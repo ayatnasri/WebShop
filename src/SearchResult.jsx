@@ -1,24 +1,21 @@
 import { useState } from "react";
-import SearchResult from "./Result";
+import ResultList from "./ResultList";
 import ShoppingCart from "./ShoppingCart";
-import styles from "./styles/search.module.css";
+import styles from "./styles/searchResult.module.css";
 
-function Binding({ products, filterProducter }) {
-  const [cartState, setCartState] = useState([]);
-  //const [quantity, setQuantity] = useState(0);
+function SearchResult({ filterProducter }) {
+  const [cartState, setCartState] = useState([]);                       // Empty array which will contain all products that added to shopping cart.
 
-  const selectAProduct = (p) => {
-    let newProductAdded = [...cartState, { ...p, quantity: 1 }];
-    const selectedProduct = cartState.find((item) => item.id === p.id);
-    if (!selectedProduct) {
-      console.log(newProductAdded);
+  const selectAProduct = (p) => {                                       // Have a product som parameter.         
+    let newProductAdded = [...cartState, { ...p, quantity: 1 }];        // Create a new state that is a copy of catState and add quantity atribute 
+    const selectedProduct = cartState.find((item) => item.id === p.id); // Check if the product has been added previously
+    
+    if (!selectedProduct) {                                             // If not => add this product to the cart. 
       setCartState(newProductAdded);
-    } else {
-      const updateQty = cartState.map((item) =>
-        item.id === p.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
+    } else {                                                            // otheWise => will update the quantity of the product 
+      const updateQty = cartState.map((item) =>                         // select the product and add +1 to the item quantity
+        item.id === p.id ? { ...item, quantity: item.quantity + 1 } : item);
       setCartState(updateQty);
-      console.log("the same product");
     }
   };
 
@@ -27,29 +24,18 @@ function Binding({ products, filterProducter }) {
     setCartState(checkTheProduct);
   };
   return (
-    <>
       <div className={styles.resultContainer}>
         <div className={styles.producterContainer}>
           {filterProducter.map((p) => (
-            <SearchResult
-              key={p.id}
-              item
-              products={products}
-              product={p}
-              onClickAdd={selectAProduct}
-            />
-          ))}
+            <ResultList key={p.id} item product={p} onClickAdd={selectAProduct} />
+            ))}
         </div>
-
-        <div className={styles.shoppingCardContainer}>
-          <ShoppingCart cartState={cartState} removeProduct={removeProduct} />
-        </div>
+        <ShoppingCart cartState={cartState} removeProduct={removeProduct} />
       </div>
-    </>
   );
 }
 
-export default Binding;
+export default SearchResult;
 
 /*import { useReducer } from "react";
   const initialValue = {

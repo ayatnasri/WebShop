@@ -1,16 +1,15 @@
 import Modal from "./Modal";
 import { useState } from "react";
-import styles from "./styles/result.module.css";
+import styles from "./styles/resultList.module.css";
 
-function SearchResult(props) {
-  let product = props.product;
-  const [modalState, setModalState] = useState(false);
+function ResultList({product, onClickAdd}) {
+  const [modalState, setModalState] = useState(false); // To show Modal pop_up component
 
-  const openModalPopUp = () => {
-    setModalState(true);
+  const openModalPopUp = () => {                       // When click on More information button =>
+    setModalState(true);                               //  Open the Modal
   };
-  const handelonClose = () => {
-    setModalState(false);
+  const handelonClose = () => {                        // When click on X i Modal => 
+    setModalState(false);                              // Close the Modal
   };
   return (
     <>
@@ -18,18 +17,9 @@ function SearchResult(props) {
         <h2> {product.name}</h2>
         <img src={product.image} alt={product.name} />
         <ul>
-          <li>
-            <span> Product id :</span> {product.id}
-          </li>
-          <li>
-            <span>Price : </span>
-            {product.price}
-          </li>
-          <li>
-            <p>
-              <span>Description : </span> {product.description}
-            </p>
-          </li>
+          <li><span>Price : </span>{product.price} SEK </li>
+          <li><span> Product's number: </span>{product.id}</li>
+          <li><span>Description : </span><p>{product.description}</p></li>
         </ul>
       </Modal>
 
@@ -39,20 +29,12 @@ function SearchResult(props) {
         <div className={styles.productList}>
           <div className={styles.productName}>
             <h3>{product.name}</h3>
-            <button className={styles.moreInfoBtn} onClick={openModalPopUp}>
-              More Info
-            </button>
+            <button className={styles.moreInfoBtn} onClick={openModalPopUp}>More Information</button>
           </div>
 
           <div className={styles.productPrice}>
-            <span>{product.price}</span>
-            <button
-              onClick={() => {
-                props.onClickAdd(product);
-              }}
-            >
-              Add to card
-            </button>
+            <span>{product.price} SEK</span>
+            <button onClick={() => { onClickAdd(product); }} > Add to cart </button>
           </div>
         </div>
       </div>
@@ -60,7 +42,7 @@ function SearchResult(props) {
   );
 }
 
-export default SearchResult;
+export default ResultList;
 
 /*
 import "./App.css";
