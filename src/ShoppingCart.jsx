@@ -3,13 +3,14 @@ import styles from "./styles/shoppingCard.module.css";
 function ShoppingCart({cartState, removeProduct}) {
 
   const totalPrice = cartState.reduce(
-    (total, currentPrice) => total + currentPrice.price * currentPrice.quantity,
+    (total, currentProduct) => total + currentProduct.price * currentProduct.quantity,
     0
   );
 
   return (
     <div className={styles.shoppingCardContainer}>
       <h3>Shopping Cart</h3>
+      {cartState.length === 0 && <p>No item added ...</p>}      
       {cartState !== undefined &&
         cartState.map((e, i) => {
           return (
@@ -17,7 +18,7 @@ function ShoppingCart({cartState, removeProduct}) {
               <img src={e.image} alt={e.name} />
               <div className={styles.productName}>
                 <h2>{e.name}</h2>
-                <p>Qty: {e.quantity} x {e.price} =
+                <p>Qty: { e.quantity } x { e.price } =
                 <span> { e.quantity * e.price } SEK</span></p>
               </div>
               <button onClick={() => removeProduct(e)}><i className="fa fa-trash"></i></button>
@@ -35,5 +36,3 @@ function ShoppingCart({cartState, removeProduct}) {
 }
 
 export default ShoppingCart;
-
-//{shopCartState.length < 0 && (<p>No item added</p>)}

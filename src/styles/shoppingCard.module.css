@@ -1,7 +1,14 @@
 .shoppingCardContainer {
   margin-top: 40px;
-  width: 40%;
-
+}
+.shoppingCardContainer p {
+  font-size: 15px;
+  color: rgb(220, 53, 69);
+  font-family:cursive;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 23px; 
+  text-align: center;
 }
 .shoppingCardContainer h3 {
   font-size: 30px;
@@ -10,6 +17,7 @@
   font-variant: normal;
   line-height: 23px; 
   color: rgb(88, 62, 65);
+  text-align: center;
 }
 .productContainer {
   display: flex;

@@ -1,5 +1,6 @@
 .resultContainer {
     display: flex;
+    width: 100%;
 }
 .producterContainer {
     display: flex;
@@ -7,4 +8,8 @@
     width: 70%;
     padding: 20px;
     margin: 10px auto;
+}
+.shoppingCardContainer {
+    margin-top: 40px;
+    width: 30%;
 }
