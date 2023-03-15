@@ -1,6 +1,7 @@
 import Modal from "./Modal";
 import { useState } from "react";
 import styles from "./styles/resultList.module.css";
+import Stars from "./Stars";
 
 function ResultList({product, onClickAdd}) {
   const [modalState, setModalState] = useState(false); // To show Modal pop_up component
@@ -11,6 +12,7 @@ function ResultList({product, onClickAdd}) {
   const handelonClose = () => {                        // When click on X i Modal => 
     setModalState(false);                              // Close the Modal
   };
+
   return (
     <>
       <Modal toggle={modalState} onClose={handelonClose}>
@@ -30,6 +32,7 @@ function ResultList({product, onClickAdd}) {
           <div className={styles.productName}>
             <h3>{product.name}</h3>
             <button className={styles.moreInfoBtn} onClick={openModalPopUp}>More Information</button>
+            <Stars />
           </div>
 
           <div className={styles.productPrice}>

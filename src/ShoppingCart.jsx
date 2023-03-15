@@ -2,7 +2,7 @@ import styles from "./styles/shoppingCard.module.css";
 
 function ShoppingCart({cartState, removeProduct}) {
 
-  const totalPrice = cartState.reduce(
+  const totalPrice = cartState.reduce( // Total = array.reduce(total + (current product's price * qty))
     (total, currentProduct) => total + currentProduct.price * currentProduct.quantity,
     0
   );

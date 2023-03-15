@@ -1,0 +1,24 @@
+.starRating{
+    display: flex;
+}
+.starRating button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 25px;
+}
+.starRating button:hover{
+    font-size: 20px;
+}
+.on {
+    color: rgb(220, 53, 69);
+}
+.off {
+    color:gray;
+}
+.starRating p{
+    font-size: 10px;
+    color: gray;
+    margin: 10px;
+}
